@@ -1,66 +1,48 @@
-[DSAI4205BigData - English Text 3-Class Sentiment Classification.md](https://github.com/user-attachments/files/26415975/DSAI4205BigData.-.English.Text.3-Class.Sentiment.Classification.md)
-# DSAI4205BigData - English Text 3-Class Sentiment Classification
+# DSAI4205 Big Data Project - English Text Sentiment Classification
 
-This repository contains trained models and Colab notebook code for English text 3-class sentiment classification, developed for the DSAI4205 Big Data course project.
+This repository contains complete code, model weights, and experimental records for English text 3-class sentiment classification.
 
-## 📋 Project Overview
+## Task Description
+- **3-Class Sentiment Analysis**:
+  - `-1`: Negative
+  - `0`: Neutral
+  - `1`: Positive
 
-- **Task**: 3-class sentiment classification of English text
+## Models Included
+This project implements a wide range of machine learning and deep learning models:
 
-- **Sentiment Labels**: 
-        
+### 1. Traditional Machine Learning Models
+- Logistic Regression (LR)
+- XGBoost
 
-    - -1: Negative Sentiment
+### 2. Advanced Two-Stage / Hybrid Ensemble Models
+- Multiple secondary composite classification models
+- Multi-model fusion & cascade structures
 
-    - 0: Neutral Sentiment
+### 3. Deep Learning & Pre-trained Language Models
+- BERT (full fine-tuning)
+- DistilBERT (lightweight fine-tuning)
+- BERTweet
+- Qwen1.5
+- LoRA fine-tuning (single-stage & two-stage)
 
-    - 1: Positive Sentiment
+## Best Performance
+- **Overall Accuracy**: 0.8967
+- Positive class: Precision = 1.0, Recall = 1.0, F1 = 1.0
 
-- **Best Model Accuracy**: 0.8967
+## Repository Structure
+- `*.ipynb`: Complete training, fine-tuning, inference, and evaluation code
+- Model folders: Trained weights, tokenizers, and configuration files
+- All experiments: Traditional ML, deep learning, fine-tuning, and ensemble models
 
-- **Key Highlight**: Positive sample recall, precision, and F1-score all reach 1.000 (no misclassification)
+## How to Use
+1. Clone the repository
+2. Open the `.ipynb` notebook in Google Colab
+3. Run cells for training, fine-tuning, or inference
 
-## 📂 Repository Content
+## Course
+DSAI4205 Big Data
 
-1. **Trained Models**: Multiple versions of sentiment classification models, including:
-        
-
-    - BERTweet Series: `bertweet_3class`, `bertweet_3class_final`, `bertweet_3class_tokenizer`
-
-    - LoRA Series (single-stage & two-stage): `lora_stage1`, `lora_stage2`, and related optimized versions
-
-    - Qwen1.5 Series: `qwen15_3class`, `qwen15_3class_final`, `qwen15_3class_tokenizer`
-
-2. **Code**: Colab notebook (.ipynb) containing full training, optimization, and inference code
-
-## 📊 Model Performance
-
-|Sentiment Class|Precision|Recall|F1-Score|
-|---|---|---|---|
-|Negative (-1)|0.856|0.830|0.843|
-|Neutral (0)|0.835|0.860|0.847|
-|Positive (1)|1.000|1.000|1.000|
-|**Overall**|**0.897**|**0.897**|**0.897**|
-## 🚀 How to Use
-
-1. Clone this repository:
-`git clone https://github.com/RichardF123/DSAI4205BigData.git`
-
-2. Open the Colab notebook (.ipynb) in Google Colab to view/run the full code.
-
-3. Use the trained models for inference directly in the notebook.
-
-## 📝 Notes
-
-- All models are trained for English text sentiment classification only.
-
-- The Colab notebook includes the complete workflow: data preprocessing, model training, multi-round optimization, and performance evaluation.
-
-- Model weights and tokenizers are stored in their respective folders for direct use.
-
-## 👤 Maintainer
-
+## Author
 RichardF123
 
-Project for DSAI4205 Big Data Course
-> （注：文档部分内容可能由 AI 生成）
