@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Local data and generated outputs
+data/*
+!data/.gitkeep
+outputs/*
+!outputs/.gitkeep
+*.log
+
+# Model artifacts and checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+checkpoint-*/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
